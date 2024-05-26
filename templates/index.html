@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Processing</title>
+</head>
+<body>
+    <h1>Data Processing</h1>
+    <form action="/process" method="post" enctype="multipart/form-data">
+        <label for="large_data">Upload Large Data File:</label>
+        <input type="file" id="large_data" name="large_data" accept=".txt" required><br><br>
+        
+        <label for="tracking_data">Upload Tracking Data File:</label>
+        <input type="file" id="tracking_data" name="tracking_data" accept=".txt" required><br><br>
+        
+        <label for="chunk_size">Chunk Size:</label>
+        <input type="number" id="chunk_size" name="chunk_size" min="1" required><br><br>
+        
+        <label for="interval">Interval for Tracking Data:</label>
+        <input type="number" id="interval" name="interval" min="1" required><br><br>
+        
+        <input type="submit" value="Process Data">
+    </form>
+</body>
+</html>
